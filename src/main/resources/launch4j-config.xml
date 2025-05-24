@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <headerType>gui</headerType>
+  <jar>build/libs/CS2Offsets-1.0-SNAPSHOT.jar</jar>
+  <outfile>CS2Offsets.exe</outfile>
+  <errTitle>CS2 Offsets Updater</errTitle>
+  <chdir>.</chdir>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest>admin.manifest</manifest>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <minVersion>21</minVersion>
+    <jdkPreference>jreOnly</jdkPreference>
+    <initialHeapSize>128</initialHeapSize>
+    <maxHeapSize>512</maxHeapSize>
+    <opt>--add-modules=javafx.controls,javafx.fxml --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED -XX:+UseG1GC</opt>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0</txtFileVersion>
+    <fileDescription>CS2 Offsets Updater</fileDescription>
+    <copyright>mjba</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0</txtProductVersion>
+    <productName>CS2 Offsets Updater</productName>
+    <internalName>cs2offsets</internalName>
+    <originalFilename>CS2Offsets.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
