@@ -69,6 +69,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+
       - name: Download Distribution Artifacts
         uses: actions/download-artifact@v4
         with:
@@ -87,3 +92,4 @@ jobs:
             build/libs/*.jar
             build/launch4j/*.exe
             build/distributions/*.zip
+            build/distributions/*.tar
