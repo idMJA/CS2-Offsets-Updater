@@ -1,6 +1,6 @@
-# CS2Offsets
+# CS2 Offsets Updater
 
-CS2Offsets is a Kotlin-based project that leverages JavaFX for its graphical user interface and various libraries for HTTP communication, JSON processing, and coroutines.
+CS2 Offsets Updater is a Kotlin-based project that leverages JavaFX for its graphical user interface and various libraries for HTTP communication, JSON processing, and coroutines.
 
 ## Features
 - JavaFX-based GUI
