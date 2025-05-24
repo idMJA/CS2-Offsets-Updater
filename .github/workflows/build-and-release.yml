@@ -81,11 +81,15 @@ jobs:
           name: distribution-artifacts
           path: ./artifacts
 
+      - name: Get Version from Gradle
+        id: version
+        run: echo "VERSION=$(./gradlew properties -q | grep '^version:' | awk '{print $2}')" >> $GITHUB_ENV
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.0
-          name: Release v1.0.0
+          tag_name: ${{ env.VERSION }}
+          name: Release ${{ env.VERSION }}
           files: |
             artifacts/**/*.jar
             artifacts/**/*.exe

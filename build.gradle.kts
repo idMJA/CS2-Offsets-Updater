@@ -31,7 +31,7 @@ launch4j {
 }
 
 group = "my.mjba.CS2Offsets"
-version = "1.0-SNAPSHOT"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
